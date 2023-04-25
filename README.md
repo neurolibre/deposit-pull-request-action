@@ -37,11 +37,11 @@ jobs:
     steps:
       - name: Open Pull Request
         id: open-pr
-        uses: xuanxu/deposit-pull-request-action@main
+        uses: neurolibre/deposit-pull-request-action@main
         with:
-          papers_repo: myorg/myjournal-papers
+          papers_repo: neurolibre/preprints
           branch_prefix: myjournal
           issue_id: ${{ github.event.inputs.issue_id }}
-          bot_token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          bot_token: ${{ secrets.BOT_TOKEN }}
           mode: dry-run
 ```
