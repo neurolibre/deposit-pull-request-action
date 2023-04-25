@@ -21,7 +21,7 @@ id = "%05d" % issue_id
 branch = branch_prefix.empty? ? id.to_s : "#{branch_prefix}.#{id}"
 
 gh_response = github_client.create_pull_request(papers_repo, papers_repo_main_banch, "#{branch}",
-  "Creating pull request for 10.21105.#{branch}", "If this looks good then :shipit:")
+  "Creating pull request for 10.55458.#{branch}", "If this looks good then :shipit:")
 
 if mode == "deposit"
   sleep(5)
